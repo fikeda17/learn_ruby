@@ -1,9 +1,10 @@
-require './test_helper'
+require "minitest/autorun"
+require "minitest/pride"
 # TIP: Always, ALWAYS read through all of the tests before you even start writing any code.
 
 # Again, a file with a specific name needs to be created, in this case "temperature.rb".
 # $ touch temperature.rb
-require 'temperature'
+require './temperature'
 
 # Now maybe we can talk more about the lines we ignored last problem.
 # The class definition lets us describe that this is a test,
@@ -19,7 +20,7 @@ class TestTemperature < MiniTest::Test
   end
 
   def test_ftoc_converts_body_temperature
-    assert_equal 98.6, ftoc(37)
+    assert_equal 37, ftoc(98.6)
   end
 
   def test_ftoc_convers_arbitrary_temperature

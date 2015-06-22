@@ -1,5 +1,6 @@
-require './test_helper'
-require 'pig_latin'
+require "minitest/autorun"
+require "minitest/pride"
+require './pig_latin'
 # Pig Latin time!
 #
 # Rule 1: If a word begins with a vowel sound, add an "ay" sound to the end of the word.

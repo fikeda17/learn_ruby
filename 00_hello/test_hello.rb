@@ -1,4 +1,5 @@
-require './test_helper'
+require "minitest/autorun"
+require "minitest/pride"
 # You should be in the folder 00_hello on the command line,
 # you should have already entered
 # and you should be running this problem's tests by entering
@@ -7,7 +8,7 @@ require './test_helper'
 # The first time you run the tests, you should get an error saying "cannot load such file -- hello.rb (LoadError)"
 # That error is coming from the line below (line #10)–
 # it means get a file with the name "hello.rb" in the current directory.
-require "hello"
+require "./hello"
 # To stop this error from being thrown we need to create the file:
 # $ touch hello.rb
 
